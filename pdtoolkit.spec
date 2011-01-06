@@ -10,6 +10,7 @@ Source0:	http://www.cs.uoregon.edu/research/paracomp/pdtoolkit/Download/pdt-%{ve
 # Source0-md5:	3f528e18d569bcefe46ed3aa83c6c608
 URL:		http://www.cs.uoregon.edu/research/paracomp/pdtoolkit/
 BuildRequires:	libstdc++-devel
+BuildRequires:	sed >= 4.0
 ExclusiveArch:	%{ix86} %{x8664} ia64
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
