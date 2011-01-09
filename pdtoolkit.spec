@@ -123,9 +123,10 @@ install -d $RPM_BUILD_ROOT{%{pdtroot}/etc,%{_bindir},%{_libdir},%{_includedir}}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-cp -a build/linux/{bin,include,lib} $RPM_BUILD_ROOT%{pdtroot}
+cp -a build/linux/{bin,lib} $RPM_BUILD_ROOT%{pdtroot}
+cp -a build/include $RPM_BUILD_ROOT%{pdtroot}
 cp -a build/etc/flint.* $RPM_BUILD_ROOT%{pdtroot}/etc
-ln -sf %{pdtroot}/libpdb.a $RPM_BUILD_ROOT%{_libdir}/libpdb.a
+ln -sf %{pdtroot}/lib/libpdb.a $RPM_BUILD_ROOT%{_libdir}/libpdb.a
 ln -sf %{pdtroot}/include $RPM_BUILD_ROOT%{_includedir}/pdtoolkit
 
 for f in cparse cxxparse f90parse f95parse gfparse ; do
