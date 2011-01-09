@@ -81,9 +81,10 @@ Frontend i analizator Mutek Fortran 90 oraz Flint F95 dla PDFToolkitu.
 %package parser-gfortran
 Summary:	GNU Fortran frontend for PDToolkit
 Summary(pl.UTF-8):	Frontend GNU Fortran dla PDFToolkitu
-License:	GPL v2+
+License:	BSD-like
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
+Requires:	pdtoolkit-gfortran >= 4.0
 
 %description parser-gfortran
 GNU Fortran frontend for PDToolkit.
@@ -123,6 +124,7 @@ install -d $RPM_BUILD_ROOT{%{pdtroot}/etc,%{_bindir},%{_libdir},%{_includedir}}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} build/linux/bin/pdt_gfortran/*
 cp -a build/linux/{bin,lib} $RPM_BUILD_ROOT%{pdtroot}
 cp -a build/include $RPM_BUILD_ROOT%{pdtroot}
 cp -a build/etc/flint.* $RPM_BUILD_ROOT%{pdtroot}/etc
@@ -176,10 +178,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{pdtroot}/bin/gfparse
 %dir %{pdtroot}/bin/pdt_gfortran
-# TODO: build from pdt-gfortran tarball?
-%attr(755,root,root) %{pdtroot}/bin/pdt_gfortran/cc1
-%attr(755,root,root) %{pdtroot}/bin/pdt_gfortran/f951
-%attr(755,root,root) %{pdtroot}/bin/pdt_gfortran/gfortran
 
 %files devel
 %defattr(644,root,root,755)
