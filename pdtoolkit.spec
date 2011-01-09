@@ -53,7 +53,7 @@ Główny pakiet zawiera narzędzia DUCTAPE.
 
 %package parser-c++
 Summary:	EDG C++ frontend and analyzer for PDToolkit
-Summary(pl.UTF-8):	Frontend i analizator EDG C++ dla PDFToolkitu
+Summary(pl.UTF-8):	Frontend i analizator EDG C++ dla PDToolkitu
 License:	proprietary
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
@@ -62,11 +62,11 @@ Requires:	%{name} = %{version}-%{release}
 EDG C++ frontend and analyzer for PDToolkit.
 
 %description parser-c++ -l pl.UTF-8
-Frontend i analizator EDG C++ dla PDFToolkitu.
+Frontend i analizator EDG C++ dla PDToolkitu.
 
 %package parser-fortran
 Summary:	Fortran 90/95 frontends and analyzers for PDToolkit
-Summary(pl.UTF-8):	Frontendy i analizatory Fortrana 90/95 dla PDFToolkitu
+Summary(pl.UTF-8):	Frontendy i analizatory Fortrana 90/95 dla PDToolkitu
 License:	proprietary
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
@@ -76,11 +76,11 @@ Mutek Fortran 90 and Cleanscape Flint F95 frontends and analyzers for
 PDToolkit.
 
 %description parser-fortran -l pl.UTF-8
-Frontend i analizator Mutek Fortran 90 oraz Flint F95 dla PDFToolkitu.
+Frontend i analizator Mutek Fortran 90 oraz Flint F95 dla PDToolkitu.
 
 %package parser-gfortran
 Summary:	GNU Fortran frontend for PDToolkit
-Summary(pl.UTF-8):	Frontend GNU Fortran dla PDFToolkitu
+Summary(pl.UTF-8):	Frontend GNU Fortran dla PDToolkitu
 License:	BSD-like
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
@@ -90,7 +90,7 @@ Requires:	pdtoolkit-gfortran >= 4.0
 GNU Fortran frontend for PDToolkit.
 
 %description parser-gfortran -l pl.UTF-8
-Frontend GNU Fortran dla PDFToolkitu.
+Frontend GNU Fortran dla PDToolkitu.
 
 %package devel
 Summary:	Header files and static DUCTAPE library
