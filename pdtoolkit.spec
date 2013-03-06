@@ -37,7 +37,7 @@ The main package contains DUCTAPE utilities.
 Program Database Toolkit (PDT) to zestaw narzędzi dających dostęp dla
 narzędzi i aplikacji analizujących do interfejsu wysokiego poziomu
 kodu źródłowego. Obecnie zestaw składa się z analizatorów IL
-(Intermediate Language tj. języka pośredniego) dla C/C++ i Fortrana
+(Intermediate Language tj. języka pośredniego) dla C/C++ i Fortranu
 77/90/95 oraz biblioteki i aplikacji DUCTAPE (C++ program Database
 Utilities and Conversion Tools APplication Environment - środowiska
 aplikacji narzędzi do bazy danych i konwersji programów w C++).
@@ -66,7 +66,7 @@ Frontend i analizator EDG C++ dla PDToolkitu.
 
 %package parser-fortran
 Summary:	Fortran 90/95 frontends and analyzers for PDToolkit
-Summary(pl.UTF-8):	Frontendy i analizatory Fortrana 90/95 dla PDToolkitu
+Summary(pl.UTF-8):	Frontendy i analizatory Fortranu 90/95 dla PDToolkitu
 License:	proprietary
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
