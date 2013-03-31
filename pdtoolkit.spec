@@ -1,13 +1,13 @@
 Summary:	Program Database Toolkit - source code analysis tools
 Summary(pl.UTF-8):	Program Database Toolkit - narzędzia do analizy kodu źródłowego
 Name:		pdtoolkit
-Version:	3.16
+Version:	3.19
 Release:	0.1
 License:	BSD-like (DUCTAPE), GPL v2+ (modified gfortran compiler), other (C++/F9x frontends)
 Group:		Development/Tools
 # "pdtoolkit" tarball contains more (not needed) precompiled binaries than "pdt"
 Source0:	http://www.cs.uoregon.edu/research/paracomp/pdtoolkit/Download/pdt-%{version}.tar.gz
-# Source0-md5:	3f528e18d569bcefe46ed3aa83c6c608
+# Source0-md5:	ba5591994998771fdab216699e362228
 URL:		http://www.cs.uoregon.edu/research/paracomp/pdtoolkit/
 BuildRequires:	libstdc++-devel
 BuildRequires:	sed >= 4.0
@@ -109,9 +109,9 @@ Pliki nagłówkowe i statyczna biblioteka DUCTAPE.
 
 %build
 install -d build/linux/bin
-path_gxx="%{__cxx}" \
+path_gxx4="%{__cxx}" \
 ./configure \
-	-gnu \
+	-gnu4 \
 	-prefix=$(pwd)/build \
 	-useropt="%{rpmcflags}"
 %{__make} \
