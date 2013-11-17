@@ -1,13 +1,13 @@
 Summary:	Program Database Toolkit - source code analysis tools
 Summary(pl.UTF-8):	Program Database Toolkit - narzędzia do analizy kodu źródłowego
 Name:		pdtoolkit
-Version:	3.19p1
+Version:	3.20
 Release:	0.1
 License:	BSD-like (DUCTAPE), GPL v2+ (modified gfortran compiler), other (C++/F9x frontends)
 Group:		Development/Tools
 # "pdtoolkit" tarball contains more (not needed) precompiled binaries than "pdt"
 Source0:	http://www.cs.uoregon.edu/research/paracomp/pdtoolkit/Download/pdt-%{version}.tar.gz
-# Source0-md5:	7e75449cad9c5aa079c9c47c22960843
+# Source0-md5:	d4cb3f8c872bf01722c7ead6e63a4819
 URL:		http://www.cs.uoregon.edu/research/paracomp/pdtoolkit/
 BuildRequires:	libstdc++-devel
 BuildRequires:	sed >= 4.0
